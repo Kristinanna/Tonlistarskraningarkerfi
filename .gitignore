@@ -1,0 +1,21 @@
+-----------------------------------------------------------------
+Composer‑managed dependencies
+-----------------------------------------------------------------
+/vendor/                         # Composer vendor directory/web/core/                       
+-----------------------------------------------------------------
+Drupal site‑specific configuration (keep the files but ignore the
+content that contains secrets or uploaded assets)
+-----------------------------------------------------------------
+/web/sites//settings.php       
+Cache / generated files
+-----------------------------------------------------------------
+/web/sites//translations       
+/web/.csslintrc/web/.editorconfig/web/.eslintignore/web/.eslintrc.json/web/.gitattributes/web/.ht.router.php/web/autoload.php/web/example.gitignore/web/index.php/web/INSTALL.txt/web/LICENSE.txt/web/README.txt/web/robots.txt/web/update.php/web/web.config
+-----------------------------------------------------------------
+IDE / editor artefacts (customise for your tools)
+-----------------------------------------------------------------
+/.idea/*.iml/.vscode/*.code-workspace*.DS_Store
+-----------------------------------------------------------------
+Miscellaneous development files
+-----------------------------------------------------------------
+node_modules/*.log*.tmp*.bak*.swp

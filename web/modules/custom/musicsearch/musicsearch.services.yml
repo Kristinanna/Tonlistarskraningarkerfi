@@ -1,0 +1,15 @@
+services:
+  musicsearch.music_search_service:
+    class: Drupal\musicsearch\Service\MusicSearchService
+    arguments:
+      - '@spotify_lookup.service'          # <- correct ID
+      - '@?discogs_lookup.service'        # <- adjust after checking Discogs
+    public: true
+
+  musicsearch.importer:
+    class: Drupal\musicsearch\Service\MusicImportService
+    arguments:
+      - '@entity_type.manager'
+      - '@file.repository'
+      - '@file_system'
+      - '@http_client'

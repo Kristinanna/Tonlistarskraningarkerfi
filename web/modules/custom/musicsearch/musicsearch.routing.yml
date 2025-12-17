@@ -1,0 +1,39 @@
+musicsearch.search:
+  path: '/admin/content/musicsearch'
+  defaults:
+    _form: '\Drupal\musicsearch\Form\MusicSearchForm'
+    _title: 'Music search & import'
+  requirements:
+    _permission: 'access content'
+
+musicsearch.album_search:
+  path: '/admin/musicsearch/album'
+  defaults:
+    _form: '\Drupal\musicsearch\Form\AlbumSearchForm'
+    _title: 'Album search'
+  requirements:
+    _permission: 'administer site configuration'
+
+musicsearch.import_spotify_album:
+  path: '/admin/musicsearch/import/spotify/{spotify_id}'
+  defaults:
+    _controller: '\Drupal\musicsearch\Controller\MusicSearchController::importSpotifyAlbum'
+    _title: 'Import Spotify album'
+  requirements:
+    _permission: 'administer nodes'
+
+musicsearch.import_discogs_album:
+  path: '/admin/musicsearch/import/discogs/{discogs_id}'
+  defaults:
+    _controller: '\Drupal\musicsearch\Controller\MusicSearchController::importDiscogsAlbum'
+    _title: 'Import Discogs album'
+  requirements:
+    _permission: 'administer site configuration'
+
+musicsearch.settings:
+  path: '/admin/config/services/musicsearch'
+  defaults:
+    _form: '\Drupal\musicsearch\Form\MusicSearchSettingsForm'
+    _title: 'Music search settings'
+  requirements:
+    _permission: 'administer site configuration'

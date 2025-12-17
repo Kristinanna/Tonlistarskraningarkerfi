@@ -1,0 +1,4 @@
+access music search:
+  title: 'Access music search & import'
+  description: 'Search external providers and import music content.'
+  restrict access: false

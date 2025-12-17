@@ -1,0 +1,8 @@
+# web/modules/custom/spotify_lookup/spotify_lookup.services.yml
+services:
+  spotify_lookup.service:
+    class: 'Drupal\spotify_lookup\Service\SpotifyLookupService'
+    arguments:
+      - '@http_client'
+      - '@cache.default'
+      - '@config.factory'

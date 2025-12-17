@@ -103,6 +103,7 @@
         }
     },
     "require-dev": {
-        "drush/drush": "^13.7"
+        "drush/drush": "^13.7",
+        "phpunit/phpunit": "^11.5"
     }
 }

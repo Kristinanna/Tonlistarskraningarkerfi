@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+  bootstrap="tests/bootstrap.php"
+  colors="true"
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  beStrictAboutTestsThatDoNotTestAnything="true"
+  beStrictAboutOutputDuringTests="true"
+  beStrictAboutChangesToGlobalState="true"
+  failOnRisky="true"
+  failOnWarning="false"
+  processIsolation="false"
+  stopOnFailure="false"
+>
+  <testsuites>
+    <testsuite name="Spotify Lookup">
+      <directory>web/modules/custom/spotify_lookup/tests/src/Unit</directory>
+    </testsuite>
+  </testsuites>
+
+  <php>
+    <ini name="memory_limit" value="-1"/>
+  </php>
+</phpunit>

@@ -1,0 +1,8 @@
+name: 'Music Search'
+type: module
+description: 'Search and import music data.'
+package: Custom
+core_version_requirement: ^9 | ^10 | ^11
+
+
+
